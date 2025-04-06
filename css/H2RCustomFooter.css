@@ -1,0 +1,51 @@
+/*backgroud and color of fount*/
+footer{
+  background-color: #555555;
+}
+footer>div>span{
+  background-color: #222222;
+}
+footer div>p,footer>h1,footer>p,footer span>p,footer span>div{
+  background-color: black;
+  color: white;
+}
+/*horizonal flex in footer div*/
+footer>div{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer>div>p{
+  flex-basis:30cm;
+}
+/*vertical flex in legal notice, terms of use, etc...*/
+footer>div>span{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 5cm;
+  height: 13em;
+  border-radius: 45px;
+}
+
+/*general vertical flex in footer*/
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0.25em;
+}
+footer  h1,footer p,footer>div>span>div, footer{
+  border-radius: 15px;
+
+}
+{
+  border-radius: 30px;
+}
+
+footer>h1{
+  font-size: xxx-large;
+}
+
