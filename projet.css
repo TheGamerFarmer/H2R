@@ -1,0 +1,74 @@
+/* Sidenav menu */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    font-size:100;
+    margin: 50
+}
+
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+header img {
+    margin: 5;
+}
+
+main {
+    margin: 1%
+}
+
+
+#WeAre{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin:5%;
+    text-justify: auto;
+}
+
+#OurBestCustom div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#OurBestCustom img{
+    width: 25%;
+}
+
+#StartYourCustom div{
+    display: flex;
+    justify-content:space-between ;
+}
+
+#StartYourCustom p{
+    display: block;
+    width: 50%;
+    height: auto;
+    padding: 5px;
+}
+
+#ContactUs{
+    display: flex;
+    justify-content: space-between;
+}
+
+#ContactUs div{
+    display: flex;
+    flex-direction: column;
+}
+
+#ContactUs div > *{
+    display: flex;
+    flex-direction: column;
+}
+  
