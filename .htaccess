@@ -5,7 +5,7 @@ Options -Indexes
     Options +FollowSymlinks
     RewriteEngine on
     RewriteBase /
-    RewriteRule ^$ accueil.html [L]
+    RewriteRule ^$ accueil.php [L]
     RewriteRule ^dropdown$ dropdown.php [L]
     RewriteRule ^footer$ footer.html [L]
     RewriteRule ^custom$ custom.html [L]

@@ -5,26 +5,24 @@ body {
     padding: 0;
 }
 
-h1{
-    text-align: center;
-    font-size:100;
-    margin: 50
-}
-
-header{
+.firstScreen{
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-between;
     background-color: black;
     color: white;
+    margin-top: 4em;
+    height: calc(100vh - 4em);
 }
 
-header img {
-    margin: 5;
+.firstScreen h1 {
+    font-size: 10em;
 }
 
-main {
-    margin: 1%
+.firstScreen img {
+    width: 20em;
+    height: 20em;
 }
 
 
@@ -60,6 +58,11 @@ main {
 #ContactUs{
     display: flex;
     justify-content: space-between;
+}
+
+#ContactUs img {
+    height: 100px;
+    width: 100px;
 }
 
 #ContactUs div{

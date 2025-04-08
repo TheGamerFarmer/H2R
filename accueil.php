@@ -1,18 +1,21 @@
+<!DOCTYPE html>
 <html lang="fr">
     <head>
-      <title>Home</title>
-      <meta charset="utf-8">
-      <link rel="stylesheet" href="accueil.css">
-
+        <title>Accueil</title>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/x-icon" href="/logo.png">
+        <link rel="stylesheet" href="accueil.css">
+        <link rel="stylesheet" href="dropdown.css">
     </head>
+
     <body>
-        <header>
-            <h1>Custom H2R</h1>
-            <p></p>
-                  <img src="image.png" alt="logo" width="300" height="300">
-        </header>
+        <?php include './dropdown.php'; ?>
 
         <main>
+            <div class="firstScreen">
+                <h1>Custom H2R</h1>
+                <img src="image.png" alt="logo">
+            </div>
             <div id="weAre">
                 <h2>We Are</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
@@ -42,7 +45,7 @@
             <h2>Contact us</h2>
             <div id="ContactUs">
                 
-                <img src="image.png" alt="image par défault" width="100" height="100">
+                <img src="image.png" alt="image par défault">
                 <div>
                     <input id="text" type="text" name="text" placeholder="text">
                     <input id="text" type="text" name="text" placeholder="text">
@@ -55,3 +58,4 @@
 
         </main>
     </body>
+</html>
