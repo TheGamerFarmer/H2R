@@ -5,8 +5,6 @@ Options -Indexes
     Options +FollowSymlinks
     RewriteEngine on
     RewriteBase /
-    RewriteRule ^$ accueil.php [L]
-    RewriteRule ^dropdown$ dropdown.php [L]
-    RewriteRule ^footer$ footer.html [L]
-    RewriteRule ^custom$ custom.html [L]
+    RewriteRule ^$ accueil/accueil.php [L]
+    RewriteRule ^custom$ customPage/custom.php [L]
 </IfModule>

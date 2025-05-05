@@ -3,7 +3,7 @@
 
     <div class="header">
         <div class="navBar">
-            <a href="/"><img src="logo.png" class="logo" alt="logo"></a>
+            <a href="/"><img src="/logo.png" class="logo" alt="logo"></a>
             <div class="hamburger">
                 <span class="line line1"></span>
                 <span class="line line2"></span>
@@ -19,7 +19,7 @@
                 <a href="/custom">Custom</a>
             </div>
 
-            <img src="image.png" alt="moto">
+            <img src="/image.png" alt="moto">
         </div>
         <div class="bottom">
             <p>© copyright 2024 - All rights reserved</p>

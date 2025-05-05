@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Accueil</title>
         <meta charset="utf-8">
+        <title>H2R</title>
         <link rel="icon" type="image/x-icon" href="/logo.png">
-        <link rel="stylesheet" href="accueil.css">
-        <link rel="stylesheet" href="dropdown.css">
+        <link rel="stylesheet" href="/accueil/accueil.css">
+        <link rel="stylesheet" href="/headerEtFooter/headerEtFooter.css">
+        <script src="/headerEtFooter/footer.js"></script>
     </head>
 
-    <body>
-        <?php include './dropdown.php'; ?>
+    <body onload="onLoadFooter()">
+        <?php include '../headerEtFooter/header.php'; ?>
 
         <main>
             <div class="firstScreen">
                 <h1>Custom H2R</h1>
-                <img src="image.png" alt="logo">
+                <img src="/image.png" alt="logo">
             </div>
             <div id="weAre">
                 <h2>We Are</h2>
@@ -29,8 +30,8 @@
             <div id="OurBestCustom">
                 
                 <div>
-                    <img src="moto.jpeg" alt="image par défault" >
-                    <img src="moto.jpeg" alt="image par défault" >
+                    <img src="/accueil/moto.jpeg" alt="image par défault" >
+                    <img src="/accueil/moto.jpeg" alt="image par défault" >
                 </div>
                 
             </div>
@@ -45,7 +46,7 @@
             <h2>Contact us</h2>
             <div id="ContactUs">
                 
-                <img src="image.png" alt="image par défault">
+                <img src="/image.png" alt="image par défault">
                 <div>
                     <input id="text" type="text" name="text" placeholder="text">
                     <input id="text" type="text" name="text" placeholder="text">
@@ -57,5 +58,7 @@
             </div>
 
         </main>
+
+        <?php include '../headerEtFooter/footer.php'; ?>
     </body>
 </html>

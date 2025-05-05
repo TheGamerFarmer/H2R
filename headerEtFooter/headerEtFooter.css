@@ -1,0 +1,203 @@
+body {
+  max-width: 100vw;
+  margin: 0;
+}
+
+header .header {
+  width: 100%;
+  box-shadow: 0 1px 6px rgb(146 161 176 / 30%);
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: white;
+}
+
+header .navBar {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4em;
+}
+
+header .dropdown {
+  background-color: gray;
+  height: calc(100vh - 4em);
+  width: 100vw;
+  position: fixed;
+  top: 4em;
+  left: 0;
+  z-index: 50;
+  transform: translateY(-150%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+header .dropdown .content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .dropdown .content .links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+header .dropdown .content .links a {
+  width: fit-content;
+  text-decoration: none;
+  color: black;
+  font-size: 10em;
+  font-weight: bolder;
+  margin: 0.5em;
+}
+
+header .dropdown .content .links a:hover {
+  color: #555555;
+}
+
+header .dropdown .content img {
+  margin: 5em;
+}
+
+header .dropdown .bottom {
+  border-top: black 1px solid;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+header .dropdown .bottom p {
+  margin-left: 1em;
+}
+
+header .checkbox {
+  position: fixed;
+  display: block;
+  height: 2.3em;
+  width: 2.3em;
+  top: 1.2em;
+  right: 3.42em;
+  Z-index: 101;
+  opacity: 0;
+  cursor: pointer;
+}
+
+header .hamburger {
+  height: 1.63em;
+  width: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header .hamburger .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #0e2431;
+}
+
+header .hamburger .line1 {
+  transform-origin: 0 0;
+  transition: transform 0.4s ease-in-out;
+}
+
+header .hamburger .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+header .hamburger .line3 {
+  transform-origin: 0 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+header .logo {
+  height: 60px;
+}
+
+header input[type="checkbox"]:checked ~ .dropdown {
+  transform: translateY(0);
+}
+
+header input[type="checkbox"]:checked ~ .header .navBar .hamburger .line1 {
+  transform: rotate(45deg);
+}
+
+header input[type="checkbox"]:checked ~ .header .navBar .hamburger .line2 {
+  transform: translateX(100px);
+}
+
+header input[type="checkbox"]:checked ~ .header .navBar .hamburger .line3 {
+  transform: rotate(-45deg);
+}
+
+/*backgroud and color of fount*/
+footer {
+  background-color: #555555;
+  text-decoration: none; /*removes link's decorations*/
+  color: white;
+  /*general vertical flex in footer*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/*background of every text*/
+/*footer div>p,footer>h1,footer>p,footer span>p,footer span>div{
+  background-color: black;
+  color: white;
+}*/
+
+/*horizonal flex in footer div*/
+footer > div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer > div > p {
+  flex-basis:30em;
+  padding:  1em 3px;
+}
+
+/*vertical flex in legal notice, terms of use, etc...*/
+footer > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+footer > div > div > a {
+  color: white;
+  text-decoration: none;
+  margin: 1em 0;
+}
+
+footer > div > div > a:hover {
+   color: lightgray;
+ }
+
+/*Title*/
+footer > h1 {
+  font-size: xxx-large;
+}
+
+footer > img {
+  width: 30em;
+  align-self: start;
+  transition: transform 15s linear;
+}

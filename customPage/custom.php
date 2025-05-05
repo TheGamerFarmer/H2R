@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="custom.css">
-    <title></title>
-  </head>
-  <body>
-    <header></header>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Custom</title>
+        <link rel="icon" type="image/x-icon" href="/logo.png">
+        <link rel="stylesheet" href="/customPage/custom.css">
+        <link rel="stylesheet" href="/headerEtFooter/headerEtFooter.css">
+        <script src="/headerEtFooter/footer.js"></script>
+    </head>
+
+  <body onload="onLoadFooter()">
+    <?php include '../headerEtFooter/header.php'; ?>
+
     <main>
       <ul>
         <li><h1>Wheels:</h1></li>
@@ -15,7 +20,7 @@
         <li><button class="favorite styled"  type="button">Wheel2</button></li>
         <li><button class="favorite styled"  type="button">Wheel3</button></li>
       </ul>
-      <img src="wireframe.png" alt="exemple">
+      <img src="/image.png" alt="exemple">
       <ul>
         <li><h1>Colors:</h1></li>
         <li><button class="favorite styled" id="base" type="button">base</button></li>
@@ -30,6 +35,7 @@
         </li>
       </ul>
     </main>
-    <footer></footer>
+
+    <?php include '../headerEtFooter/footer.php'; ?>
   </body>
 </html>
