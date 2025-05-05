@@ -6,10 +6,9 @@
         <link rel="icon" type="image/x-icon" href="/logo.png">
         <link rel="stylesheet" href="/accueil/accueil.css">
         <link rel="stylesheet" href="/headerEtFooter/headerEtFooter.css">
-        <script src="/headerEtFooter/footer.js"></script>
     </head>
 
-    <body onload="onLoadFooter()">
+    <body>
         <?php include '../headerEtFooter/header.php'; ?>
 
         <main>

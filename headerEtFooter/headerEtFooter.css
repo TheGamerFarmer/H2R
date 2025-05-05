@@ -196,8 +196,17 @@ footer > h1 {
   font-size: xxx-large;
 }
 
+@keyframes allerRetour {
+  0%    {transform: translateX(0)}
+  100%  {transform: translateX(calc(100vw - 30em))}
+}
+
 footer > img {
   width: 30em;
   align-self: start;
-  transition: transform 15s linear;
+  animation: linear;
+  animation-name: allerRetour;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
