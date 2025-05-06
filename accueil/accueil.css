@@ -1,11 +1,4 @@
-/* Sidenav menu */
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.firstScreen{
+main #firstScreen {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -14,64 +7,133 @@ body {
     color: white;
     margin-top: 4em;
     height: calc(100vh - 4em);
+    min-height: 35em;
 }
 
-.firstScreen h1 {
+main #firstScreen #titre {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+main #firstScreen h1 {
     font-size: 10em;
+    margin: 0;
 }
 
-.firstScreen img {
-    width: 20em;
-    height: 20em;
+main #firstScreen img {
+    height: 25em;
 }
 
+main #content {
+    margin: 2em 10em;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
 
-#WeAre{
+main #content h2 {
+    margin: 0;
+}
+
+main .contentBox {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin:5%;
     text-justify: auto;
 }
 
-#OurBestCustom div{
-    display: flex;
-    justify-content: space-evenly;
+main .title {
+    font-size: 5em;
 }
 
-#OurBestCustom img{
-    width: 25%;
+main #weAre p {
+    font-size: 1.5em;
 }
 
-#StartYourCustom div{
-    display: flex;
-    justify-content:space-between ;
+main #ourBestCustoms .title, main #startYourCustom .title {
+    align-self: start;
+    margin-left: 1em;
 }
 
-#StartYourCustom p{
-    display: block;
-    width: 50%;
-    height: auto;
-    padding: 5px;
-}
-
-#ContactUs{
+main #ourBestCustoms div {
     display: flex;
     justify-content: space-between;
+    margin-top: 1em;
+    width: 100%;
 }
 
-#ContactUs img {
-    height: 100px;
-    width: 100px;
+main #ourBestCustoms img {
+    width: 40%;
 }
 
-#ContactUs div{
+main #startYourCustom div {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+main #startYourCustom p {
+    width: 50%;
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+main #startYourCustom div a {
+    height: fit-content;
+    margin-right: 5em;
+}
+
+main #startYourCustom div a button {
+    cursor: pointer;
+    height: 7em;
+    width: 15em;
+    background-color: blue;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 1em;
+}
+
+main #startYourCustom div a button:active {
+    background-color: mediumblue;
+    color: lightgray;
+}
+
+main #contactUs #contactUsContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+main #contactUs #contactUsImage {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #contactUs #contactUsImage img {
+    height: 20em;
+}
+
+main #contactUs form {
+    width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 1em;
 }
 
-#ContactUs div > *{
-    display: flex;
-    flex-direction: column;
+main #contactUs form input, main #contactUs form textarea {
+    width: 80%;
+    border-radius: 0.2em;
+}
+
+main #contactUs form textarea {
+    resize: none;
+    height: 10em;
 }
   
