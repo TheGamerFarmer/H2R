@@ -1,8 +1,17 @@
-main{
+#ex{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 5em;
+    margin-left: 460px;
+}
+
+h1{
+    margin-right: 200px;
+}
+
+#liste{
+    gap: 200px;
 }
 
 li{
@@ -10,8 +19,10 @@ li{
 }
 ul{
     display: flex;
-    flex-direction: column;
+    align-items: center;
     gap: 5px;
+    flex-wrap: wrap;
+    flex-basis: 300px;
 }
 
 .styled {
