@@ -1,75 +1,121 @@
-#ex{
+main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-top: 5em;
-    margin-left: 460px;
+    margin: 4em 0;
 }
 
-h1{
-    margin-right: 200px;
+main .image_container {
+    height: 28em;
+    width: 40em;
+    position: relative;
 }
 
-#liste{
-    gap: 200px;
+main .image {
+    opacity: 0;
+    position: absolute;
+    width: 40em;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.8s ease, opacity 0.2s ease;
 }
 
-li{
-    list-style: none;
+main .expend {
+    transform: scaleX(1);
+    transform-origin: left;
 }
-ul{
+
+main .active {
+    opacity: 1;
+}
+
+main #buttons {
     display: flex;
-    align-items: center;
-    gap: 5px;
+    justify-content: space-between;
+    width: 95%;
+}
+
+main #buttons .buttonsType {
+    display: flex;
     flex-wrap: wrap;
-    flex-basis: 300px;
+    width: 30em;
+    gap: 0.5em;
 }
 
-.styled {
-  border: 0;
-  line-height: 2.5;
-  padding: 0 20px;
-  font-size: 1rem;
-  text-align: center;
-  color: #fff;
-  text-shadow: 1px 1px 1px #000;
-  border-radius: 10px;
-  background-image: linear-gradient(
-    to top left,
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.2) 30%,
-    rgba(0, 0, 0, 0)
-  );
-  box-shadow:
-    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
-    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+main #buttons .buttonsType h1 {
+    width: 100%;
+    height: fit-content;
+    margin: 0;
 }
 
-.styled:active {
-  box-shadow:
-    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
-    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+main #buttons .buttonsType .button {
+    width: 11em;
+    height: 6em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.7em;
+    cursor: pointer;
 }
-#base{
-    width: 80px;
+
+main #buttons .buttonsType .button#pipe1 {
+    background-image: url("/customPage/pot1.jpeg");
 }
-#blue{
-    background-color: blue;
-    width: 80px;
+
+main #buttons .buttonsType .button#pipe2 {
+    background-image: url("/customPage/pot2.jpeg");
 }
-#green{
-    background-color: green;
-    width: 80px;
+
+main #buttons .buttonsType .button#pipe3 {
+    background-image: url("/customPage/pot3.jpeg");
 }
-#red{
-    background-color: red;
-    width: 80px;
+
+main #buttons .buttonsType .button#pipe4 {
+    background-image: url("/customPage/pot4.jpeg");
 }
-#yellow{
-    background-color: yellow;
-    width: 80px;
+
+main #buttons .buttonsType .button#red {
+    background-image: url("/customPage/red.jpeg");
 }
-#black{
-    background-color: black;
-    width: 80px;
+
+main #buttons .buttonsType .button#green {
+    background-image: url("/customPage/green.jpeg");
+}
+
+main #buttons .buttonsType .button#blue {
+    background-image: url("/customPage/blue.jpeg");
+}
+
+main #buttons .buttonsType .button#yellow {
+    background-image: url("/customPage/yellow.jpeg");
+}
+
+main #buttons .buttonsType .button#black {
+    background-image: url("/customPage/black.jpeg");
+}
+
+main #buttons .buttonsType .button#wheel1 {
+    background-image: url("/customPage/wheel1.jpeg");
+}
+
+main #buttons .buttonsType .button#wheel2 {
+    background-image: url("/customPage/wheel2.jpeg");
+}
+
+main #buttons .buttonsType .button#wheel3 {
+    background-image: url("/customPage/wheel3.jpeg");
+}
+
+main #buttons .buttonsType .button#wheel4 {
+    background-image: url("/customPage/wheel4.jpeg");
+}
+
+main #buttons .buttonsType .button#wheel5 {
+    background-image: url("/customPage/wheel5.jpeg");
+}
+
+main #buttons .buttonsType .button#wheel6 {
+    background-image: url("/customPage/wheel6.jpeg");
 }
