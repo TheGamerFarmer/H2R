@@ -14,9 +14,11 @@
 
         <main>
             <div class="image_container">
-                <img class="image expend active" src="/image.png" alt="image1">
-                <img class="image" src="/image.png" alt="image2">
-                <img class="image" src="/image.png" alt="image3">
+                <img class="image expend active" src="/customPage/moto1.jpeg" alt="moto 1">
+                <img class="image" src="/customPage/moto2.jpeg" alt="moto 2">
+                <img class="image" src="/customPage/moto3.jpeg" alt="moto 3">
+                <img class="image" src="/customPage/moto4.jpeg" alt="moto 4">
+                <img class="image" src="/customPage/moto5.jpeg" alt="moto 5">
             </div>
             <div id="buttons">
                 <div class="buttonsType">
